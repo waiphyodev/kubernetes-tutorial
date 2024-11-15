@@ -7,7 +7,7 @@ metadata:
 spec:
     storageClassName: local-storage
     accessModes:
-        - ReadWriteOnce
+        - ReadWriteOnce     # https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes
     capacity:
         storage: 10Gi
     local:
@@ -19,4 +19,4 @@ spec:
                     - key: kubernetes.io/hostname
                       operator: In
                       values:
-                        - agb-worker
+                        - agb-worker    # node-name

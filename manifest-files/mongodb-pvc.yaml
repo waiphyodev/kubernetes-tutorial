@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
     name: mongodb-pvc
 spec:
-    storageClassName: manual    # can change "local-storage" to create pv dynamically
+    storageClassName: local-storage
     accessModes:
         - ReadWriteOnce
     resources:
