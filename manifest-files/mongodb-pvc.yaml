@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+    name: mongodb-pvc
+spec:
+    storageClassName: manual    # can change "local-storage" to create pv dynamically
+    accessModes:
+        - ReadWriteOnce
+    resources:
+        requests:
+            storage: 2Gi
+
